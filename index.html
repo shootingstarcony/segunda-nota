@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio en PDF</title>
+    <title>Portafolio Constanza Ortega</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
         * {
             margin: 0;
@@ -14,11 +15,10 @@
             box-sizing: border-box;
         }
 
-        /* 
-            Primer punto:
-            Cambie los colores, usando alguna armonía de color tomada de 
-            https://color.adobe.com/es/create/color-wheel
-            Triada #BB1509, #326598, #8D9932 en matiz más oscuro
+        /* Paleta de colores triádica:
+            --colorPrincipal:#BB1509 (Rojo)
+            --colorOpuesto:#326598 (Azul)
+            --colorMediador:#8D9932 (Verde)
         */
 
         :root{
@@ -27,12 +27,8 @@
             --colorMediador:#8D9932;
         }
 
-        /* 
-            No sería necesario hacer más ajustes en el CSS 
-        */
-
         body {
-            font-family: Helvetica, Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             background-color: #FFF;
             color: #000;
             overflow-x: hidden;
@@ -65,13 +61,6 @@
             position: relative;
         }
 
-        /* 
-            Pero revise la extensión de su nombre, 
-            podría requerir un ajuste de font-size, 
-            y nada más.
-        */
-
-
         h1 {
             font-family: "Climate Crisis", sans-serif;
             font-weight: 400;
@@ -84,8 +73,8 @@
         }
 
         p {
-            font-weight: 800;
-            font-size: calc(1rem + 0.5vw);
+            font-weight: 700;
+            font-size: calc(1.1rem + 0.5vw);
             line-height: 1.5;
             margin-bottom: 50px;
             position: relative;
@@ -185,7 +174,6 @@
 
         /* ===========AJUSTES SEGÚN PANTALLAS============== */
 
-
         @media (max-width: 992px) {
             .container {
                 grid-template-columns: 1fr;
@@ -207,28 +195,24 @@
 <body>
     <div class="container">
         <div class="left-section">
-            <!--segundo punto por los ajuste en la sección izquierda-->
             <h1>Constanza Ortega</h1>
             <p>Soy Constanza, estudiante de diseño.
 
 Mi práctica profesional se centra en la narrativa visual y la exploración matérica. Este portafolio ejemplifica mi rigor creativo en la ilustración y mi compromiso con la experimentación de materiales avanzados.
 
 Agradeceré su análisis y le invito a establecer contacto para discutir oportunidades de colaboración.</p>
-            <!--suba el PDF a GitHub y cambie la referencia de hipertexto-->
-            <a href="#" class="download-btn" download>MI PORTAFOLIO</a>
+            
+            <a href="https://raw.githubusercontent.com/shootingstarcony/segunda-nota/main/Portafolio%20Constanza.pdf" class="download-btn" download>MI PORTAFOLIO</a>
         </div>
         
         <div class="right-section">
-            <!--tercer punto por los ajuste en la sección izquierda-->
             <div class="mugshot-container">
                 <div class="badge">
-                    <!--vincule a su cuenta en GitHub-->
-                    <a href="https://github.com/shootingstarcony" target="_blank">2025</a>
+                    <a href="https://github.com/shootingstarcony/segunda-nota/blob/main/Portafolio%20Constanza.pdf" target="_blank">2025</a>
                 </div>
                 <div class="mugshot-frame">
                     <div class="mugshot">
-                        <!--incluya la misma imagen que utiliza en su portafolio, a resolución, tamaño y peso adecuado para la web-->
-                        <img src="https://shootingstarcony.github.io/segunda-nota/img/Foto%20portafolio%20(1).png">
+                        <img src="https://shootingstarcony.github.io/segunda-nota/img/Foto%20portafolio%20(1).png" alt="Constanza - Ilustradora y Diseñadora">
                     </div>
                 </div>
             </div>
